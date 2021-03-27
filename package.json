@@ -1,11 +1,13 @@
 {
   "name": "js-labs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test.sort.bubble": "mocha tasks/bubble/sort-bubble.spec.js",
-    "test.sort.bubble.watch": "npm run test.sort.bubble -- --watch"
+    "test.sort.bubble.watch": "npm run test.sort.bubble -- --watch",
+    "test.sort.numbers": "mocha tasks/method-sort-numbers/method-sort-numbers.spec.js",
+    "test.sort.numbers.watch": "npm run test.sort.numbers -- --watch"
   },
   "repository": {
     "type": "git",

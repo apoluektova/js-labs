@@ -8,9 +8,9 @@ describe('sortByBubble', () => {
 
   it('Should return new array', () => {
     const input = [1, 2, 3, 4, 5];
-    const output = [1, 2, 3, 4, 5];
+    const result = sortByBubble(input);
 
-    assert.equal(sortByBubble(input), output, 'Arrays are one instance');
+    assert.notEqual(result, input, 'Arrays are one instance');
   });
 
 
@@ -18,7 +18,9 @@ describe('sortByBubble', () => {
     const input = [2, 1, 3, 4, 5];
     const clonedInput = input.slice();
 
-    assert.deepEqual(sortByBubble(input), clonedInput, 'Input after sorting is changed');
+    sortByBubble(input);
+
+    assert.deepEqual(input, clonedInput, 'Input after sorting is changed');
   });
 
   describe('Should return correct result', () => {
