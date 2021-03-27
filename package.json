@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test.1": "mocha tasks/bubble/sort-bubble.spec.js"
+    "test.1": "mocha tasks/bubble/sort-bubble.spec.js",
+    "test.1.watch": "npm run test.1 -- --watch"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/kicumkicum/js-labs/issues"
   },
-  "homepage": "https://github.com/kicumkicum/js-labs#readme"
+  "homepage": "https://github.com/kicumkicum/js-labs#readme",
+  "devDependencies": {
+    "@types/chai": "4.2.15",
+    "@types/mocha": "8.2.2",
+    "chai": "4.3.4",
+    "mocha": "8.3.2"
+  }
 }
