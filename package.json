@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test.1": "mocha tasks/bubble/sort-bubble.spec.js",
-    "test.1.watch": "npm run test.1 -- --watch"
+    "test.sort.bubble": "mocha tasks/bubble/sort-bubble.spec.js",
+    "test.sort.bubble.watch": "npm run test.sort.bubble -- --watch"
   },
   "repository": {
     "type": "git",
