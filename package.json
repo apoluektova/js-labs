@@ -7,7 +7,9 @@
     "test.sort.bubble": "mocha tasks/bubble/sort-bubble.spec.js",
     "test.sort.bubble.watch": "npm run test.sort.bubble -- --watch",
     "test.sort.numbers": "mocha tasks/method-sort-numbers/method-sort-numbers.spec.js",
-    "test.sort.numbers.watch": "npm run test.sort.numbers -- --watch"
+    "test.sort.numbers.watch": "npm run test.sort.numbers -- --watch",
+    "test.task1": "npm run test.sort.numbers",
+    "test.task2": "npm run test.sort.bubble"
   },
   "repository": {
     "type": "git",
