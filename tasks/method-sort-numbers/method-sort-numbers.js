@@ -1,4 +1,7 @@
-const sortNumbers = null;
+const sortNumbers = (someArray) => {
+  const sortedArray = someArray.slice().sort();
+  return sortedArray;
+};
 
 module.exports = {
   sortNumbers,
