@@ -4,12 +4,13 @@ const sortByBubble = (someArray) => {
   for (let i = 1; i < sortedArray.length; i ++ ) {
     for (let j = 0; j < sortedArray.length - 1; j++) {
       if (sortedArray[j] > sortedArray[j + 1]) {
-        const a = sortedArray[j + 1];
+        const tempVariable = sortedArray[j + 1];
         sortedArray[j + 1] = sortedArray[j];
-        sortedArray[j] = a;
+        sortedArray[j] = tempVariable;
       }
     };
   };
+  
   return sortedArray;
 };
 
