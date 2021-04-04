@@ -1,4 +1,4 @@
-const createTagsBr = () => null;
+const createTagsBr = null;
 
 module.exports = {
   createTagsBr,
