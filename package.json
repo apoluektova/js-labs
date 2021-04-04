@@ -1,13 +1,15 @@
 {
   "name": "js-labs",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test.sort.bubble": "mocha tasks/bubble/sort-bubble.spec.js",
     "test.sort.bubble.watch": "npm run test.sort.bubble -- --watch",
     "test.sort.numbers": "mocha tasks/method-sort-numbers/method-sort-numbers.spec.js",
-    "test.sort.numbers.watch": "npm run test.sort.numbers -- --watch"
+    "test.sort.numbers.watch": "npm run test.sort.numbers -- --watch",
+    "test.map.strings": "mocha tasks/method-map-strings/method-map-strings.spec.js",
+    "test.map.strings.watch": "npm run test.map.strings -- --watch"
   },
   "repository": {
     "type": "git",
