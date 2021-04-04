@@ -10,9 +10,8 @@ describe('sortNumbers', () => {
     const input = [1, 2, 3, 4, 5];
     const result = sortNumbers(input);
 
-    assert.notEqual(result, input, 'Arrays are one instance');
+    assert.isOk(result instanceof Array, 'Result is not array');
   });
-
 
   it('Should not change original array', () => {
       const input = [2, 1, 3, 4, 5];
