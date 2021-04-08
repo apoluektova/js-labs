@@ -26,9 +26,9 @@ describe('createTagsBr', () => {
         it('Example 1', () => {
             const input = ['hello world', 'foo bar', 'bar baz'];
             const output = [
-                '<br>hello world</br>',
-                '<br>foo bar</br>',
-                '<br>bar baz</br>',
+                '<b>hello world</b>',
+                '<b>foo bar</b>',
+                '<b>bar baz</b>',
             ];
 
             assert.deepEqual(createTagsBr(input), output, 'Arrays are one instance');
@@ -37,27 +37,12 @@ describe('createTagsBr', () => {
         it('Example 2', () => {
             const input = ['bar baz', 'hello world', 'foo bar'];
             const output = [
-                '<br>bar baz</br>',
-                '<br>hello world</br>',
-                '<br>foo bar</br>',
+                '<b>bar baz</b>',
+                '<b>hello world</b>',
+                '<b>foo bar</b>',
             ];
 
             assert.deepEqual(createTagsBr(input), output, 'Arrays are one instance');
-        });
-
-        it('Example 3', () => {
-            const input = [
-                'Тег br устанавливает перевод строки в том месте, где этот тег находится.',
-                'В отличие от тега абзаца p, использование тега br не добавляет пустой отступ перед строкой.',
-                'Если текст, в котором используется перевод строки, обтекает плавающий элемент, то с помощью атрибута clear тега br можно сделать так, чтобы следующая строка начиналась ниже элемента.',
-            ];
-            const output = [
-                '<br>Тег br устанавливает перевод строки в том месте, где этот тег находится.</br>',
-                '<br>В отличие от тега абзаца p, использование тега br не добавляет пустой отступ перед строкой.</br>',
-                '<br>Если текст, в котором используется перевод строки, обтекает плавающий элемент, то с помощью атрибута clear тега br можно сделать так, чтобы следующая строка начиналась ниже элемента.</br>',
-            ];
-
-            assert.deepEqual(createTagsBr(input), output, 'Arrays are not equals');
         });
     });
 });
