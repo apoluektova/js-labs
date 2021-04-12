@@ -9,7 +9,9 @@
     "test.sort.numbers": "mocha tasks/method-sort-numbers/method-sort-numbers.spec.js",
     "test.sort.numbers.watch": "npm run test.sort.numbers -- --watch",
     "test.map.strings": "mocha tasks/method-map-strings/method-map-strings.spec.js",
-    "test.map.strings.watch": "npm run test.map.strings -- --watch"
+    "test.map.strings.watch": "npm run test.map.strings -- --watch",
+    "test.task1": "npm run test.sort.numbers",
+    "test.task2": "npm run test.sort.bubble"
   },
   "repository": {
     "type": "git",
