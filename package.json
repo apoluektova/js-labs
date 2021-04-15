@@ -11,7 +11,8 @@
     "test.map.strings": "mocha tasks/method-map-strings/method-map-strings.spec.js",
     "test.map.strings.watch": "npm run test.map.strings -- --watch",
     "test.task1": "npm run test.sort.numbers",
-    "test.task2": "npm run test.sort.bubble"
+    "test.task2": "npm run test.sort.bubble",
+    "test.task3": "npm run test.map.strings"
   },
   "repository": {
     "type": "git",
