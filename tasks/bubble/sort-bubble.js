@@ -10,7 +10,7 @@ const sortByBubble = (someArray) => {
       }
     };
   };
-  
+
   return sortedArray;
 };
 
