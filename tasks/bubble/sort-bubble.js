@@ -1,8 +1,8 @@
 const sortByBubble = (someArray) => {
   const sortedArray = someArray.slice();
 
-  for (let i = 1; i < sortedArray.length; i ++ ) {
-    for (let j = 0; j < sortedArray.length - 1; j++) {
+  for (let i = sortedArray.length - 1; i > 0; i--) {
+    for (let j = 0; j < i; j++) {
       if (sortedArray[j] > sortedArray[j + 1]) {
         const tempVariable = sortedArray[j + 1];
         sortedArray[j + 1] = sortedArray[j];
@@ -10,9 +10,10 @@ const sortByBubble = (someArray) => {
       }
     };
   };
-  
+
   return sortedArray;
 };
+
 
 module.exports = {
   sortByBubble,
